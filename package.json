@@ -8,8 +8,8 @@
     "dev": "npx tsx ./src/index.ts",
     "dev:watch": "npx tsx watch ./src/index.ts",
     "prod": "node ./dist/src/index.js",
-    "build": "tsc -p tsconfig.prod.json",
-    "build:clean": "npx rimraf ./dist && tsc -p tsconfig.prod.json",
+    "build": "ttsc -p tsconfig.prod.json",
+    "build:clean": "npx rimraf ./dist && ttsc -p tsconfig.prod.json",
     "clean": "npx rimraf ./dist"
   },
   "author": "Dimas Adnan",
@@ -25,7 +25,9 @@
     "prettier": "^2.8.4",
     "rimraf": "^4.1.3",
     "tsx": "^3.12.5",
-    "typescript": "^4.9.5"
+    "ttypescript": "^1.5.15",
+    "typescript": "^4.9.5",
+    "typescript-transform-paths": "^3.4.6"
   },
   "dependencies": {
     "dotenv-safe": "^8.2.0"
