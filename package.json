@@ -5,8 +5,8 @@
   "main": "index.ts",
   "type": "module",
   "scripts": {
-    "dev": "npx ts-node-esm ./src/index.ts",
-    "dev:watch": "nodemon",
+    "dev": "npx tsx ./src/index.ts",
+    "dev:watch": "npx tsx watch ./src/index.ts",
     "prod": "node ./dist/src/index.js",
     "build": "tsc -p tsconfig.prod.json",
     "build:clean": "npx rimraf ./dist && tsc -p tsconfig.prod.json",
@@ -22,10 +22,9 @@
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "nodemon": "^2.0.20",
     "prettier": "^2.8.4",
     "rimraf": "^4.1.3",
-    "ts-node": "^10.9.1",
+    "tsx": "^3.12.5",
     "typescript": "^4.9.5"
   },
   "dependencies": {
